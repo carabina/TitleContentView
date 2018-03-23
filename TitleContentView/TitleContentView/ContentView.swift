@@ -68,7 +68,7 @@ extension ContentView {
         collectionView.isPagingEnabled = true
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.backgroundColor = UIColor.green
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "TitleContentViewID")
         if #available(iOS 11, *) {
             collectionView.contentInsetAdjustmentBehavior = .never
